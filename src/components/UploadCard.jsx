@@ -1,4 +1,3 @@
-// src/components/UploadCard.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import {
@@ -51,7 +50,7 @@ const UploadCard = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:5007/api/upload', formData, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/upload`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setContactInfo(response.data);

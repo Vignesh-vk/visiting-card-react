@@ -1,4 +1,3 @@
-// src/pages/CardsPage.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {
@@ -30,7 +29,7 @@ const CardsPage = () => {
 
     const fetchCards = async () => {
         try {
-            const response = await axios.get(`http://localhost:5007/api/cards?page=${page + 1}&limit=${rowsPerPage}`);
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/cards?page=${page + 1}&limit=${rowsPerPage}`);
             setCards(response.data.cards);
             setTotal(response.data.total);
         } catch (error) {
