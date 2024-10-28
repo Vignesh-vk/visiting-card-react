@@ -1,8 +1,19 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to vesiting card reader react
 
-Currently, two official plugins are available:
+step 1 - Open terminal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+step 2 - Run below command to install dependency
+    npm install
+
+step 3 - Create .env variables and add below keys
+    VITE_BACKEND_URL= "Your backend URL"
+
+step 4 - Run the below command to run the project
+    npm start
+
+Routers Used in this project
+
+    1. '/' - dashboard- Used to upload card details
+    2. '/cards' - listing page - Used to list the already uploaded card details
